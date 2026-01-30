@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dummy Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#">DummySite</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to the Dummy Website</h1>
+          <p>A minimal static site for testing and demos.</p>
+          <a class="btn" href="#features">Explore</a>
+        </div>
+      </section>
+
+      <section id="features" class="container features">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x300" alt="placeholder">
+          <h3>Feature One</h3>
+          <p>Simple, fast, and ready to use.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x300" alt="placeholder">
+          <h3>Feature Two</h3>
+          <p>Responsive layout and clean styles.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x300" alt="placeholder">
+          <h3>Feature Three</h3>
+          <p>Includes a demo contact form with JS.</p>
+        </article>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="4"></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <div id="formMessage" aria-live="polite" class="form-message"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© DummySite — Built for testing</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

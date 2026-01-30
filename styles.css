@@ -1,0 +1,38 @@
+:root{--bg:#f7f7fb;--accent:#0078d4;--muted:#666}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI,SegoeUI,Arial,system-ui,Helvetica,sans-serif;
+  background-color:var(--bg);
+  color:#111;
+  min-height:100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url('images/obama.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.nav-toggle{display:none;background:none;border:0;font-size:1.5rem}
+.site-nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:4rem 0;text-align:center;background:linear-gradient(180deg,#fff,transparent)}
+.hero h1{margin:0 0 .5rem;font-size:2rem}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;padding:2rem 0}
+.card{background:#fff;padding:0;border-radius:8px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.06);text-align:left}
+.card img{width:100%;height:auto;display:block}
+.card h3{margin:1rem}
+.card p{margin:0 1rem 1rem;color:var(--muted)}
+.contact{padding:2rem 0}
+form{display:grid;gap:.5rem;max-width:480px}
+label{display:flex;flex-direction:column;font-size:.9rem}
+input,textarea{padding:.5rem;border:1px solid #ddd;border-radius:6px}
+.form-message{margin-top:.5rem;color:green}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);font-size:.9rem}
+
+@media (max-width:700px){
+  .site-nav{display:none}
+  .nav-toggle{display:block}
+}
